@@ -1,0 +1,159 @@
+/* Artistic, modern, responsive style.css with cool teal accent */
+
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling with subtle dark gradient background */
+body {
+  font-family: 'Poppins', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+  color: #e0e0e0;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Header and footer with subtle shadow and spacing */
+header, footer {
+  background-color: #222;
+  color: #fff;
+  padding: 1.5em;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Navigation bar links with cool teal accent */
+nav a {
+  color: #f0f0f0;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00bfa6;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+nav a:hover {
+  color: #00bfa6;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Main content area with responsive layout */
+main {
+  padding: 2em;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Profile image with artistic filter, rounded corners, and centered */
+#profile-pic {
+  display: block;
+  margin: 30px auto;
+  max-width: 280px;
+  border: 8px solid #fff;
+  border-radius: 12px;
+  filter: grayscale(100%) contrast(120%);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.8);
+}
+
+/* Table styling with rounded corners and hover states */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 1.5em;
+  background-color: #2c2c2c;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 0.85em;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #3a3a3a;
+}
+
+tr:hover {
+  background-color: #444;
+  transition: background-color 0.3s ease;
+}
+
+/* Buttons with cool teal hover accent */
+button {
+  background-color: #444;
+  color: #fff;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #00bfa6;
+  transform: translateY(-2px);
+}
+
+/* Responsive design tweaks */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 1em;
+  }
+
+  table, th, td {
+    font-size: 0.9em;
+  }
+
+  #profile-pic {
+    max-width: 80%;
+  }
+}
+
+/*
+* References:
+* - I used W3Schools for: CSS transitions: https://www.w3schools.com/css/css3_transitions.asp
+* - I used MDN for: border-radius: https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius
+* - I used MDN for: CSS box-shadow: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+* - I used W3Schools for: hover effects: https://www.w3schools.com/css/css3_transitions.asp
+* - I used W3Schools for: CSS responsive design: https://www.w3schools.com/css/css_rwd_intro.asp
+*/

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="staff.js"></script>
+</head>
+<body>
+  <!-- Header with navigation -->
+  <header>
+    <h1>Staff Page</h1>
+    <nav>
+      <a href="index.html">Profile</a>
+      <a href="mark2grade.html">Mark to Grade</a>
+      <a href="staff.html">Staff</a>
+      <a href="tempconvert.html">Temperature Converter</a>
+    </nav>
+  </header>
+
+  <!-- Main content with table and sorting buttons -->
+  <main>
+    <button onclick="sortByName()">Sort by Name</button>
+    <button onclick="sortBySalary()">Sort by Salary</button>
+    <table id="staff-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Location</th>
+          <th>Extn</th>
+          <th>Start Date</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Dylan Retana 2025</p>
+  </footer>
+</body>
+</html>
+
+<!--
+* References:
+* - I used MDN for: HTML table element: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+* - I used MDN for: HTML button element: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button
+-->

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="tempconvert.js"></script>
+</head>
+<body>
+  <!-- Header with navigation -->
+  <header>
+    <h1>Temperature Converter</h1>
+    <nav>
+      <a href="index.html">Profile</a>
+      <a href="mark2grade.html">Mark to Grade</a>
+      <a href="staff.html">Staff</a>
+      <a href="tempconvert.html">Temperature Converter</a>
+    </nav>
+  </header>
+
+  <!-- Main content with input fields for Celsius, Fahrenheit, Kelvin -->
+  <main>
+    <label>Celsius: <input type="number" id="celsius" oninput="fromCelsius()"></label><br>
+    <label>Fahrenheit: <input type="number" id="fahrenheit" oninput="fromFahrenheit()"></label><br>
+    <label>Kelvin: <input type="number" id="kelvin" oninput="fromKelvin()"></label>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Dylan Retana 2025</p>
+  </footer>
+</body>
+</html>
+
+<!--
+* References:
+* - I used MDN for: HTML input element: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+* - I used MDN for: HTML label element: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
+-->

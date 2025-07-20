@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark to Grade Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="mark2grade.js"></script>
+</head>
+<body>
+  <!-- Header with navigation -->
+  <header>
+    <h1>Mark to Grade Converter</h1>
+    <nav>
+      <a href="index.html">Profile</a>
+      <a href="mark2grade.html">Mark to Grade</a>
+      <a href="staff.html">Staff</a>
+      <a href="tempconvert.html">Temperature Converter</a>
+    </nav>
+  </header>
+
+  <!-- Main content with input, button, and output areas -->
+  <main>
+    <input type="text" id="mark-input-box" placeholder="Enter mark (0-100)">
+    <button onclick="MarkToGrade()">Convert</button>
+    <div id="validation-message"></div>
+    <div id="grade-output"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Dylan Retana 2025</p>
+  </footer>
+</body>
+</html>
+
+<!--
+* References:
+* - I used MDN for: HTML input element: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+* - I used MDN for: HTML button element: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button
+-->
